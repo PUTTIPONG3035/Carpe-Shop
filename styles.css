@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    font-family: 'Sarabun', sans-serif;
+}
+
+.menu-container {
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+    margin-bottom: 10vh;
+    background-color: var(--bg-color);
+}
+
+.picmenu {
+    width: 50%;
+    padding: 5vh;
+    background-color: var(--color2);
+}
+
+.picmenu img {
+    width: 100%;
+}
+
+.optionmain {
+    width: 50%;
+    font-size: large;
+    padding: 2vw;
+    padding-top: 3vw;
+    background-color: var(--white);
+}
+
+.form-check-input {
+    margin-left: 2vw;
+    margin-right: 0.5vw;
+    margin-top: 1.5vh;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.bt {
+    width: 6vw;
+    border-radius: 50px;
+    background-color: var(--color1);
+    color: var(--white);
+    text-align: center;
+    left: 50%;
+    border-style: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+.bt:hover {
+    background-color: var(--color5);
+}
+
+#add {
+    width: fit-content;
+    margin-top: 2vh;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 620px) {
+    .menu-container {
+        width: 90%;
+        display: contents;
+    }
+
+    .picmenu {
+        position: relative;
+        width: 90%;
+        padding: 5%;
+    }
+
+    .optionmain {
+        position: relative;
+        width: 90%;
+    }
+
+    * {
+        scrollbar-width: none;
+    }
+
+}

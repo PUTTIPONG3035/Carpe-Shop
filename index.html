@@ -1,0 +1,127 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400&family=Mitr:wght@300&family=Sarabun:wght@300&family=Ubuntu:ital,wght@0,400;1,300&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Crape-Shop</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/452/452565.png">
+</head>
+
+<header>
+    <div class="text">
+        <a href="index.html">
+            <h1>CRAPE</h1>
+        </a>
+    </div>
+    <div>
+        <i class='fa fa-shopping-bag cart-icon'></i>
+        <div class="num">0</div>
+    </div>
+</header>
+
+<body>
+    <div class="cart">
+        <h2 class="cart-title">Your Chart</h2>
+        <div class="item">
+
+        </div>
+
+        <div class="total">
+            <div class="total-price">รวม 0 บาท</div>
+        </div>
+
+        <a href="checkout.html"><button type="button" class="btn-buy">Buy now</button></a>
+        <i class="bx bx-x" id="close-cart"></i>
+    </div>
+    <div class="contain">
+        <div class="slideshow">
+            <div class="slides">
+                <img class="pic"
+                    src="https://media.discordapp.net/attachments/1019574801557364837/1041004539723120742/adground_long2-Recovered.png?width=1118&height=671"
+                    style="width:60%">
+                <img class="pic"
+                    src="https://media.discordapp.net/attachments/1019574801557364837/1038839447829094500/Ad_Americano_Remake.png?width=1118&height=671"
+                    style="width:60%">
+                <img class="pic"
+                    src="https://media.discordapp.net/attachments/1019574801557364837/1041002386010935316/Ad_2Crape_Remake.png?width=1118&height=671"
+                    style="width:60%">
+
+                <div class="button" style="width:60%">
+                    <div class="buttonleft" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="buttonright" onclick="plusDivs(1)">&#10095;</div>
+                    <span class="middle" onclick="currentDiv(1)"></span>
+                    <span class="middle" onclick="currentDiv(2)"></span>
+                    <span class="middle" onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="menubar">
+                <ul>
+                    <li><a class="menu-all" onclick="categoryProducts('')">ทั้งหมด</a></li>
+                    <li><a class="menu-promotions" onclick="categoryProducts('ชุดสุดคุ้ม')">ชุดสุดคุ้ม</a></li>
+                    <li><a class="menu-crepes" onclick="categoryProducts('เครป')">เครป</a></li>
+                    <li><a class="menu-tokyos" onclick="categoryProducts('โตเกียว')">โตเกียว</a></li>
+                    <li><a class="menu-drinks" onclick="categoryProducts('เครื่องดื่ม')">เครื่องดื่ม</a></li>
+                </ul>
+
+            </div>
+
+            <div class="shop-content">
+
+            </div>
+        </div>
+    </div>
+    <script src="products.js"></script>
+    <script src="gallery.js"></script>
+    <script src="main.js"></script>
+    <script src="menu.js"></script>
+    <script src="cart.js"></script>
+</body>
+<div class="footer">
+<footer>
+    <table>
+        <tr>
+            <td style="width: 20%">
+                <h3 class="footer-header">References</h3>
+                <a href="https://www.burgerking.co.th/" target="_blank" class="footer-text">
+                    <p>Burger King
+                    </p>
+                </a>
+                <a href="https://food.grab.com/th/th/restaurant/%E0%B8%82%E0%B8%99%E0%B8%A1%E0%B9%82%E0%B8%95%E0%B9%80%E0%B8%81%E0%B8%B5%E0%B8%A2%E0%B8%A7%E0%B8%8B%E0%B8%B4%E0%B9%88%E0%B8%87-%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%81%E0%B9%81%E0%B8%82%E0%B9%89%E0%B8%87-delivery/3-C23CCN3JEPDYNJ"
+                    target="_blank"  class="footer-text">
+                    <p>โตเกียวซิ่ง</p>
+                </a>
+                <a href="https://www.starbucks.co.th/th/" target="_blank" class="footer-text">
+                    <p>Starbuck</p>
+                </a>
+            </td>
+            <td style="width: 30%">
+                <h3 class="footer-header">Member</h3>
+                <p>ชนากาญจน์ สุทธิกุล 64070018 </p>
+                <p>ปณต กุศลสัตย์ 64070062</p>
+                <p>พุฒิพงศ์ พานิช 64070078</p>
+                <p>เพ็ญพิชชา อยู่ประเสริฐ 64070080</p>
+            </td>
+            <td style="width: 30%">
+                <h3 class="footer-header">Webtect project kmitl</h3>
+                <p>อาจารย์ที่ปรึกษา : ผศ.ดร.มานพ พันธ์โคกกรวด</p>
+                <p>เว็บไซต์นี้เป็นส่วนหนึ่งของโครงงานวิชา Web Technology</p>
+            </td>
+        </tr>
+    </table>
+</footer>
+</div>
+
+</html>
